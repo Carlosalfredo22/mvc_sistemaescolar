@@ -1,0 +1,145 @@
+/* Estilo básico para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Contenedor principal */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Encabezados */
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Enlaces de acción (logout y add teacher) */
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+
+.logout-link,
+.add-teacher-button {
+    font-size: 1rem;
+    color: #00796b;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.logout-link:hover,
+.add-teacher-button:hover {
+    text-decoration: underline;
+}
+
+/* Lista de profesores */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li a {
+    color: #d32f2f;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para los iconos de la clínica */
+.icon-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+.icon-block .material-icons {
+    font-size: 3rem;
+    color: #00796b;
+}
+
+.icon-block h5 {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    color: #757575;
+}
+
+.icon-block a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.icon-block a:hover {
+    color: #004d40;
+}
+
+/* Estilos para las columnas del icono */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col {
+    flex: 0 0 30%;
+    max-width: 30%;
+    box-sizing: border-box;
+}
+
+/* Estilo para el cuadro de búsqueda */
+.search-container {
+    margin-bottom: 1.5rem;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Agregar interactividad en los iconos */
+.card.hoverable:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Para dispositivos pequeños */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col {
+        max-width: 100%;
+    }
+}

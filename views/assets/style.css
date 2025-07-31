@@ -1,0 +1,100 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e3f2fd; /* Fondo de color suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+/* Contenedor de Login */
+.login-container {
+    background-color: #fff;
+    padding: 40px 58px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.login-container:hover {
+    transform: translateY(-5px); /* Efecto al pasar el mouse */
+}
+
+/* Título de Login */
+h1 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+/* Estilo de los labels */
+label {
+    font-size: 16px;
+    color: #555;
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: 600;
+}
+
+/* Estilo de los inputs */
+input {
+    width: 92%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border 0.3s ease;
+}
+
+/* Estilo al hacer focus en los inputs */
+input:focus {
+    border-color: #3f51b5;
+    outline: none;
+    box-shadow: 0 0 8px rgba(63, 81, 181, 0.3); /* Efecto de sombra */
+}
+
+/* Estilo del botón de login */
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #3f51b5;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #303f9f;
+}
+
+/* Mensaje de error */
+.error-message {
+    color: #d32f2f;
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+/* Enlace de "Recuperar Contraseña" o similar */
+a {
+    color: #3f51b5;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: underline;
+}
